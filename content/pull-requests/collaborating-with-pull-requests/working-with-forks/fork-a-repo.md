@@ -1,114 +1,114 @@
 ---
-title: Fork a repository
-allowTitleToDifferFromFilename: true
-redirect_from:
-  - /fork-a-repo
-  - /forking
-  - /articles/fork-a-repo
-  - /github/getting-started-with-github/fork-a-repo
-  - /github/getting-started-with-github/quickstart/fork-a-repo
-  - /get-started/quickstart/fork-a-repo
-intro: A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
-permissions: '{% data reusables.enterprise-accounts.emu-permission-fork %}'
-versions:
-  fpt: '*'
-  ghes: '*'
-  ghec: '*'
-topics:
-  - Pull requests
-  - Issues
-  - Notifications
-  - Accounts
+标题：分叉存储库
+allowTitleToDifferFromFilename:true
+重定向(_F)：
+-/fork-a-repo
+-/分叉
+-/articles/fork-a-repo
+-/github/github入口/fork-a-repo
+-/github/getting-started-with-github/quickstart/fork-a-repo
+-/get-started/quickstart/fork-a-repo
+简介：分叉是一个新的存储库，它与原始的“上游”存储库共享代码和可见性设置。
+权限：“{%数据可重用。企业帐户。emu-permission-fork%}"
+版本：
+FPT：'*'
+GHEs：'*'
+ghec：'*'
+主题：
+-拉取请求
+-问题
+-通知
+-帐户
 ---
-## About forks
+##关于叉
 
-{% data reusables.repositories.fork-definition-long %} For more information, see [AUTOTITLE](/pull-requests/collaborating-with-pull-requests/working-with-forks).
+{%数据可重用。reposits.fork-definition-long%}有关详细信息，请参阅[AUTOTITLE](/拉式请求/用拉式请求协作/用叉工作).
 
-### Propose changes to someone else's project
+###建议对其他人的项目进行更改
 
-For example, you can use forks to propose changes related to fixing a bug. Rather than logging an issue for a bug you have found, you can:
+例如，您可以使用分叉来建议与修复Bug相关的更改.您可以：
 
-* Fork the repository.
-* Make the fix.
-* Submit a pull request to the project owner.
+*将存储库分叉。 将存储库分叉。
+*进行修复。搞定。
+*向项目所有者提交提取请求。 向项目所有者提交提取请求。
 
-### Use someone else's project as a starting point for your own idea.
+###用别人的项目作为自己想法的起点。 把别人的项目作为你自己想法的起点。
 
-Open source software is based on the idea that by sharing code, we can make better, more reliable software. For more information, see the [About the Open Source Initiative](https://opensource.org/about) on the Open Source Initiative.
+开源软件基于这样的理念：通过共享代码，我们可以制作更好、更可靠的软件。 有关更多信息，请参阅[关于开源计划](关于开源计划的https://opensource.org/about))。[关于开源计划](https://opensource.org/about)关于开源计划。
 
-For more information about applying open source principles to your organization's development work on {% data variables.product.prodname_dotcom %}, see {% data variables.product.prodname_dotcom %}'s white paper [An introduction to innersource](https://resources.github.com/whitepapers/introduction-to-innersource/).
+有关将开放源代码原则应用于组织对{%data variables.product.prodname_dotcom%}的开发工作的详细信息，请参阅{%data variables.product.prodname_dotcom%}的白皮书[内部资源简介](https://resources.github.com/whitepapers/introduction-to-innersource/).[内部资源简介](https://resources.github.com/whitepapers/introduction-to-innersource/).
 
-When creating your public repository from a fork of someone's project, make sure to include a license file that determines how you want your project to be shared with others. For more information, see [Choose an open source license](https://choosealicense.com/) at choosealicense.com.
+从某人的项目分支创建公共存储库时，请确保包含一个许可证文件，以确定您希望如何与其他人共享项目。 有关详细信息，请参阅[选择开放源代码许可证](https://choosealicense.com/)位于choosealicense.com。[选择开放源代码许可证](https://choosealicense.com/)在choosealicense.com。
 
-{% data reusables.open-source.open-source-guide-repositories %} {% data reusables.open-source.open-source-learning %}
+{%数据可重复使用。 开源。 开源指南存储库%}{%数据可重用。 开源。 开源学习%}
 
-## Prerequisites
+##前提条件先决条件
 
-If you haven't yet, first set up Git and authentication with {% data variables.location.product_location %} from Git. For more information, see [AUTOTITLE](/get-started/git-basics/set-up-git).
+如果尚未设置Git，请首先使用Git中的{%data variables.location.product_location%}设置Git和身份验证.有关详细信息，请参阅[AUTOTITLE](/get-started/git-basics/set-up-git)。[AUTOTITLE](/get-started/git-basics/set-up-git).
 
-## Forking a repository
+##分库分叉存储库
 
-{% webui %}
+{%webui%}
 
-You might fork a project to propose changes to the upstream repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. You can practice setting the upstream repository using the same [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository you just forked.
+您可以将项目分叉，以建议对上游存储库进行更改。在这种情况下，定期将分叉与上游存储库同步是一种很好的做法。为此，您需要在命令行上使用Git.您可以使用刚刚分叉的[Octocat/匙刀](https://github.com/octocat/Spoon-Knife)存储库)来练习设置上游存储库。[Octocat/匙刀](https://github.com/octocat/Spoon-Knife)您刚刚分叉的存储库。
 
-1. On {% ifversion fpt or ghec %}{% data variables.product.prodname_dotcom %}{% else %}{% data variables.location.product_location %}{% endif %}, navigate to the [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository.
-1. In the top-right corner of the page, click **Fork**.
+1.在{%ifversion fpt或ghec%}{%个数据变量上。product.prodname_dotcom%}{%else%}{%数据变量。location.product_location%}{%endif%}，导航到[Octocat/匙刀](https://github.com/octocat/Spoon-Knife)存储库)。在{%ifversion fpt或ghec%}上{%个数据变量。Product.prodname_dotcom%}{%else%}{%个数据变量。location.product_location%}{%endif%}，导航到[Octocat/匙刀](https://github.com/octocat/Spoon-Knife)存储库。
+1.在页面右上角，单击**叉**。 在页面的右上角，单击**叉**.
 
-   ![Screenshot of the main page of repository. A button, labeled with a fork icon and "Fork 59.3k," is outlined in dark orange.](/assets/images/help/repository/fork-button.png)
-1. Under "Owner," select the dropdown menu and click an owner for the forked repository.
-1. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
-1. Optionally, in the "Description" field, type a description of your fork.
-1. Optionally, select **Copy the DEFAULT branch only**.
+！[存储库主页面的屏幕截图。 一个带有叉形图标和“叉形59.3k”的按钮以黑色显示橙。](/assets/images/help/repository/fork-button.PNG)![存储库主页面的屏幕快照。 一个按钮标有一个叉形图标和“叉形59.3k”，以深橙色显示。](/assets/images/help/repository/fork-button.PNG)
+1.在“所有者”下，选择下拉菜单，然后单击分叉存储库的所有者。 在“所有者”下，选择下拉菜单，然后单击分叉存储库的所有者。
+1.默认情况下，分叉的名称与上游存储库相同。 (可选)要进一步区分分叉，请在“存储库名称”字段中键入名称。 默认情况下，分叉的名称与上游存储库相同。 (可选)要进一步区分分叉，请在“存储库名称”字段中键入名称。
+1.(可选)在“说明”字段中，键入分叉的说明。 或者，在“描述”字段中，键入您的叉的描述。
+1.(可选)选择**仅复制默认分支**。(可选)选择**仅复制默认分支**.
 
-   For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. If you do not select this option, all branches will be copied into the new fork.
-1. Click **Create fork**.
+对于很多分叉场景，例如参与开源项目，您只需要复制默认分支即可，如果不选择此选项，则所有分支都会被复制到新的分叉中。
+1.单击**创建分叉**。单击**创建分叉**.
 
-> [!NOTE]
-> If you want to copy additional branches from the upstream repository, you can do so from the **Branches** page. For more information, see [AUTOTITLE](/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository).
+>[！注意] [！注意]
+>如果要从上游存储库复制其他分支，可以从**分支**页面执行此操作。 有关详细信息，请参见[AUTOTITLE](/拉式请求/用拉式请求进行协作/用拉式请求为您的工作提出变更建议-请求/在存储库中创建和删除分支)。 如果要从上游存储库复制其他分支，可以从**分支机构**有关详细信息，请参阅[AUTOTITLE](/拉动式请求/拉动式请求协作/拉动式请求对工作提出更改/cr在您的存储库中吃掉并删除分支).
 
-{% endwebui %}
+{%endwebui%}
 
-{% cli %}
+{%cli%}
 
-{% data reusables.cli.cli-learn-more %}
+{%data reusables.cli.cli-learn-more%}
 
-To create a fork of a repository, use the `gh repo fork` subcommand.
+要创建存储库的分支，请使用'GH回购叉'子命令。`GH回购叉`子命令。
 
-```shell
-gh repo fork REPOSITORY
+"'shellshell
+GH回购叉库
 ```
 
-To create the fork in an organization, use the `--org` flag.
+要在组织中创建分支，请使用"--org"标志.'--组织标志.
 
-```shell
-gh repo fork REPOSITORY --org "octo-org"
+"'shellshell
+GH回购叉库--组织"octo-org"
 ```
 
-{% endcli %}
+{%endcli%}
 
-{% desktop %}
+{%desktop%}
 
-You can fork a repository on {% data variables.product.prodname_dotcom_the_website %} or in {% data variables.product.prodname_desktop %}. For information about forking on {% data variables.product.prodname_dotcom_the_website %}, see [the web browser version of this article](/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo?tool=webui).
+您可以在{%个数据变量上派生存储库。产品。prodname_dotcom_the_web站点%}或在{%data variables.product.prodname_desktop%}中。有关在{%数据上分叉的信息，请参阅变量。产品。prodname_dotcom_the_web站点%}，请参阅[本文的Web浏览器版本](/pull-requests/使用pull-requests协作/使用forks/fork-a-repo？工具=webui)。[本文的Web浏览器版本](/pull-requests/使用pull-requests协作/使用forks/fork-a-repo？工具=webui).
 
-{% data reusables.desktop.forking-a-repo %}
+{%data reusables.desktop.forking-a-repo%}
 
-{% enddesktop %}
+{%enddesktop%}
 
-{% webui %}
+{%webui%}
 
-## Cloning your forked repository
+##克隆分叉存储库克隆分叉存储库
 
-Right now, you have a fork of the Spoon-Knife repository, but you do not have the files in that repository locally on your computer.
+现在，您有一个勺刀存储库的分支，但是您的计算机上没有该存储库中的本地文件。
 
-1. On {% ifversion fpt or ghec %}{% data variables.product.prodname_dotcom %}{% else %}{% data variables.location.product_location %}{% endif %}, navigate to **your fork** of the Spoon-Knife repository.
-{% data reusables.repositories.copy-clone-url %}
-{% data reusables.command_line.open_the_multi_os_terminal %}
-{% data reusables.command_line.change-current-directory-clone %}
-1. Type `git clone`, and then paste the URL you copied earlier. It will look like this, with your {% data variables.product.github %} username instead of `YOUR-USERNAME`:
+1.在{%ifversion fpt或ghec%}{%个数据变量上。product.prodname_dotcom%}{%else%}{%数据变量。location.product_location%}{%endif%}，导航到**勺刀存储库的分叉**.在{%ifversion fpt或ghec%}上{%个数据变量。product.prodname_dotcom%}{%else%}{%个数据变量。location.product_location%}{%endif%}，导航到**你的叉子**勺子刀仓库的。
+{%data reusables.reeposits.copy-clone-url%}
+{%数据可重用。命令行。打开multi_os_terminal%}
+{%数据可重用。命令行。更改-当前-目录-克隆(_L)%}
+1.键入"git克隆"，然后粘贴先前复制的URL.它将如下所示，包含您的{%数据变量。product.github%}用户名而不是"您的用户名“”：类型`吉特克隆`，然后粘贴先前复制的URL。它将如下所示，包含您的{%数据变量。product.github%}用户名而不是`您的用户名`:
 
-   ```shell
-   git clone https://{% data variables.product.product_url %}/YOUR-USERNAME/Spoon-Knife
+"'shell"'shell
+git克隆https://{%数据变量。产品。product_url%}/您的用户名/spopper-Clifegit克隆https://{%数据变量。产品。product_url%}/您的用户名/勺子-克里夫
    ```
 
 1. Press **Enter**. Your local clone will be created.
